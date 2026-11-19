@@ -1,11 +1,12 @@
 {
-  "name": "cf-panel",
+  "name": "xiaozhou-cloudflare-dashboard",
   "version": "2.9.0",
-  "description": "单文件 Cloudflare 管理面板（Module Worker）：Workers / KV / D1 / R2 / Pages / DNS / Tunnel",
+  "description": "xiaozhou 二开版 Cloudflare 管理面板（Module Worker）：Workers / KV / D1 / R2 / Pages / DNS / Tunnel",
   "type": "module",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "scripts": {
+    "build": "node -e \"console.log('单文件 Worker 无需构建，跳过')\"",
     "test": "node tests/run.mjs",
     "check": "node --check cf-panel-worker-v2.9.0.js",
     "deploy": "wrangler deploy"
@@ -17,6 +18,7 @@
     "cloudflare",
     "workers",
     "panel",
+    "dashboard",
     "kv",
     "d1",
     "r2",
@@ -28,6 +30,7 @@
     "cf-panel-worker-v2.9.0.js",
     "wrangler.toml",
     "README.md",
+    "OAUTH.md",
     "LICENSE"
   ]
 }
